@@ -1,0 +1,18 @@
+h1. sha1-service
+
+This service allows you to post a url that points to a file.  The service will then download that file, run it through sha1sum and return the checksum.
+
+Example:
+
+This would generate sha1 checksum for the content of the "original" datastream in a Fedora object with pid chagneme:20
+
+http://localhost:3000/sha1?url=http://localhost:8983/fedora/objects/changeme:20/datastreams/original/content
+
+h2. Known Issues
+
+* assumes UNIX/Linux with sha1sum installed
+
+h2. Acknowledgements
+
+Created by "Bill Ingram" https://github.com/waingram
+
